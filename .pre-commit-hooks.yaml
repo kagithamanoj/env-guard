@@ -1,0 +1,7 @@
+- id: env-guard
+  name: env-guard
+  description: Validate .env files against a schema (required keys, formats, no real secrets)
+  entry: env-guard
+  language: python
+  files: '(^|/)\.env(\..+)?$'
+  args: [--strict]
